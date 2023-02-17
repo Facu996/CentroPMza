@@ -300,6 +300,9 @@ border-radius: 0.2rem;
 
 /*Contact Form*/
 .contact_container{
+      max-width: 960px;
+      margin: auto;
+      width: 100%;
 background: var(--second-color);
 }
 .contact-form {
@@ -316,8 +319,8 @@ background: var(--second-color);
   outline: none;
   font-size: 0.9rem;
   padding: 15px;
-  color: var(--container-color);
-  background: white;
+  color: var(--bg-color);
+  background: #fff;
   border-radius: 0.4rem;
 }
 
@@ -328,12 +331,12 @@ background: var(--second-color);
   font-weight: 500;
   text-transform: uppercase;
   padding: 12px;
-  background: white;
+  background: #03060c;
   cursor: pointer;
 }
 
 .contact-form .send-btn:hover {
-  background: #ffd60a;
+  background: #546eff;
   transition: 0.3s all linear;
 }
 
@@ -385,6 +388,9 @@ background: var(--second-color);
   .post-content{
     margin-top: 9rem;
   }
+  .post-filter{
+    display: none;
+  }
 }
 @media (max-width: 570px) {
   .post-header {
@@ -409,6 +415,7 @@ background: var(--second-color);
   }
   .home-subtitle{
     font-size: 0.9rem;
+    text-align: center;
   }
   .home{
     min-height: 300px;
@@ -432,5 +439,9 @@ background: var(--second-color);
     font-size: 0.875rem;
     line-height: 1.5rem;
     margin: 10px 0;
+  }
+  .contact_container{
+    max-width: 340px;
+    width: auto;
   }
 }
